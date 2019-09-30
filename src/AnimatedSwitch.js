@@ -43,7 +43,7 @@ class AnimatedSwitch extends React.Component {
 
   matches = 0;
 
-  componentWillReceiveProps(nextProps) {
+  UNSAFE_componentWillReceiveProps(nextProps) {
     const nextMatch = getMatchedRoute(
       nextProps.children,
       nextProps.location.pathname,
